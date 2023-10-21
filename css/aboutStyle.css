@@ -15,8 +15,15 @@ li, a {
     color:rgb(255, 255, 255);
 }
 
-p, h1 {
-    font-family:'Nunito Sans', sans-serif;
+h2, h3{
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 25px;
+    margin-bottom: 20px;
 }
 
 header{
@@ -28,12 +35,15 @@ header{
     position:fixed;
     width:100%;
     height: 20px;
-    z-index: 9;
 }
 
 .logo {
     margin-left:25px;
     font-size:22px;
+}
+
+.nav-links {
+    margin-right: 20px;
 }
 
 .nav-links li {
@@ -53,6 +63,7 @@ header{
 .mini-nav {
     display:none;
     cursor:pointer;
+    margin-right: 50px;
 }
 
 .mini-nav span {
@@ -122,24 +133,17 @@ header{
     background-color:rgb(30, 31, 68);
 }
 
-
-
-
 .content {
-    margin: 0 10% 0 10%;
+    margin: 0 20px 0 20px;
     padding: 63px 0 0 0;
-}
-
-.content h1 {
-    color:rgb(0, 0, 0);
-    border-bottom: solid rgb(0, 0, 0);
+    
 }
 
 .content p {
-    margin-top: 20px;
-    line-height: 2;
+    margin-left: 20px;
     font-size: 18px;
 }
+
 
 .proj-page {
     position:fixed;
@@ -214,7 +218,7 @@ header{
 footer {
     background-color:rgb(30, 31, 68);
     border-top: solid rgb(0, 174, 255);
-    margin-top: 300px;
+    margin-top: 30%;
 }
 
 .container {
@@ -304,4 +308,6 @@ footer {
         text-align: center;
         
     }
+
 }
+
