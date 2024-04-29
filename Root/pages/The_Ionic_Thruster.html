@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/The_Ionic_Thruster.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ion Thruster</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+<body>
+    <header>
+        <a class="logo" href="../index.html">EON SCIENCE</a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li ><a href="#" id="proj-pagebtn" onclick="proj_display()">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="mini-nav" id="mini-navbtn" onclick="show()">
+            <span id="bar1" class="bar"></span>
+            <span id="bar2" class="bar"></span>
+            <span id="bar3" class="bar"></span>
+        </div>
+    </header>
+
+    <div class="mini-navpg" id="mini-navpg">
+        <ul class="mini-nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li ><a href="#" id="proj-pagebtn" onclick="mini_proj_display()">Projects</a></li>
+        </ul>
+    </div>
+
+    <div class="proj-page" id="proj-page">
+        <div class="proj-page-backbtn" onclick="mini_proj_display()"><div></div></div>
+        <ul class="proj-links">
+            <li><a href="slingshot.html">The Magnetic Slingshot</a></li>
+            <li><a href="The_Ionic_Thruster.html">The Ion Thruster</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>The Ion Thruster</h2>
+        <p>
+            Taking a peek into the world of Star wars or Star Trek the ion thruster seems or rather sounds like something right out of one of
+             these movies. Going into what it actually is, the ion thruster is an engine that is capable of producing thrust in a way which 
+             may seem a bit unconventional from the normal means by which we have established propulsion in the past, like with the use of jet 
+             engines or rocket engines. Unlike its predecessors the ionic thruster does not rely on the combustion of fuel to produce thrust; 
+             rather it relies on the propulsion, ionization, acceleration and neutralization of an ion of an element, most preferably Xenon.
+        </p>
+
+        <img src="../images/ion_thruster (2).png" style="height:30%; width:90%; margin:5% 0 5% 5%;" >
+
+        <h3>Stages of Ionic Thrust</h3>
+        <div id="section-II">
+            <p><b>Propulsion:</b><br> During this stage xenon atoms are shot out, along with electrons, into a positively charged chamber surrounded 
+                externally with magnets.<br></p>
+        
+            <p><b>Ionization:</b><br> Once in the chamber the electrons move randomly towards the walls of the chamber as a result of the 
+                positive charge of the walls and due to the presence of the magnets outside the chamber, a positive magnetic field is generated,
+                 which in turn increases the speed of the electrons random movement.<br>  
+                As the electrons move about in the chamber they tend to make multiple collisions with the Xenon atoms, which results in the formation of a 
+                positively charged Xenon ion because the collisions caused by the electrons knock off electrons in the valence shell of the Xenon atoms.<br></p> 
+            
+            <img src="../images/reaction.png" style="height:20%; width:60%; margin: 2% 0 2% 15%; ">    
+
+            <p><b>Acceleration:</b><br> The positively charged Xenon ions then move towards the second stage of the thruster as they still 
+                retain their momentum after having been propelled into the first chamber. The second chamber being the accelerator is composed 
+                of two electrodes with opposite charges separated by a given distance. These electrodes also have holes punctured through them, 
+                which allow for the Xenon ions to move through the electrodes.<br> The space in between the electrodes has an induced potential 
+                difference due to the difference in the charges of the electrodes. Once the Xenon ion makes its way into this region through 
+                the first positively charged electrode, it accelerates toward the negatively charged electrode and passes through the holes, 
+                thus making its exit out of the thruster.<br></p>
+
+            <img src="../images/electrode.png" style="height:20%; width:60%; margin: 2% 0 2% 15%;">
+        
+            <p><b>Neutralization:</b><br> Once the Xenon ions are outside the thruster it is neutralized by electrons getting shot out near the 
+                exit hole of the electrode. The neutralization of the Xenon ions is done so as to prevent the ions from falling back towards the 
+                negatively charged electrode.<br></p>
+        
+            <p>Now that this process is completed thrust is produced following Newton's third law of motion.</p>
+        </div> 
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/rich.idoko/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2023; Designed by <span class="designer">Rich Idoko</span></p>
+        </div>
+    </footer>
+
+  <script src="../script/indexFunction.js"></script>
+</body>
+</html>
