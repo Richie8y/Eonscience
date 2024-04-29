@@ -31,10 +31,13 @@ header{
     justify-content: space-between;
     padding: 20px;
     border-bottom:solid rgb(0, 174, 255);
-    background-image: linear-gradient( 45deg, rgb(0, 0, 0) , rgb(22, 2, 53) 50%);
-    position:fixed;
-    width:100%;
+    background-color:rgb(0, 0, 0);
+    position: sticky;
+    top:0px;
+    max-width:100%;
     height: 20px;
+    margin:0 0 0 0;
+
 }
 
 .logo {
@@ -63,7 +66,7 @@ header{
 .mini-nav {
     display:none;
     cursor:pointer;
-    margin-right: 50px;
+    padding: 0 0  0;
 }
 
 .mini-nav span {
@@ -72,7 +75,7 @@ header{
     border:none;
     border-radius:5px;
     background-color: rgb(0, 174, 255);
-    margin-top: 5px;
+    margin: 0 0 0 0;
     display:block;
 }
 
@@ -80,9 +83,20 @@ header{
     transition:.4s;
 }
 
+.mini-nav #bar1 {
+    margin: 3px 0 5px 0;
+}
+
+.mini-nav #bar3 {
+    margin: 5px 0 5px 0;
+}
+
+
 .mini-nav #bar1.active {
-    position:absolute;
+    position:fixed;
     transform:rotate(45deg);
+    right: 20px;
+    top:27px;
 }
 
 .mini-nav #bar2.active {
@@ -90,19 +104,24 @@ header{
 }
 
 .mini-nav #bar3.active {
+    position:fixed;
+    right:20px;
+    top:25px;
     transform:rotate(-45deg);
 }
 
 
 
 .mini-navpg {
-    position:fixed;
+   position:fixed;
     height:100%;
     width:300px;
-    background-image: linear-gradient( -45deg, rgb(13, 86, 223) , rgb(0, 145, 202) 60%);
+    background-color:rgb(37, 37, 37);
     transform:translateX(-100%);
     transition:.4s;
-    margin-top: 63px;
+    z-index: 9;
+    border-top-right-radius:10px;
+    display: none;
 }
 
 .mini-navpg.active {
@@ -116,7 +135,7 @@ header{
 }
 
 .mini-navpg li a {
-    color:black;
+    color:rgb(255, 255, 255);
     display:block;
     transition:.4s;
     height:30px;
@@ -129,19 +148,28 @@ header{
 }
 
 .mini-navpg li a:hover {
-    color:white;
-    background-color:rgb(30, 31, 68);
+    color:rgb(0, 0, 0);
+    background-color:rgb(0, 204, 255);
 }
 
 .content {
-    margin: 0 20px 0 20px;
-    padding: 63px 0 0 0;
-    
+    margin: 0 20px 235px 20px;
+    padding: 0 0 0 0;
+}
+
+.content h1{
+    color:rgb(255, 255, 255);
+    border: solid rgb(0, 174, 255);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
 }
 
 .content p {
-    margin-left: 20px;
-    font-size: 18px;
+    margin: 0 0 10px 20px;
+    border-left: solid rgb(0, 0, 0);
+    padding-left: 10px;
 }
 
 
@@ -149,10 +177,11 @@ header{
     position:fixed;
     height:100%;
     width:300px;
-    background-image: linear-gradient( -45deg, rgb(13, 86, 223) , rgb(0, 145, 202) 60%);
+    background-color:rgb(37, 37, 37);
     transform:translateX(-117%);
     transition:.4s;
-    margin-top: 63px;
+    border-top-right-radius:10px;
+    z-index: 9;
 }
 
 .proj-page.active {
@@ -160,27 +189,45 @@ header{
 }
 
 .proj-page-backbtn {
-    width: 40px;
-    height: 40px;
-    border-radius: 30px;
-    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin: 0 0 0 310px;
+    background-color: rgb(0, 0, 0);
+    width:35px;
+    height:35px;
+    transition: 0.2s ease;
     position: absolute;
-    margin-left: 310px;
 }
 
 .proj-page-backbtn:hover {
     cursor: pointer;
-    background-color: rgba(37, 168, 255, 0.3);
+   
+}
+
+.proj-page-backbtn div {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    transform: rotate(-45deg);
+    left: 11.5px;
+    top: 7.45px;
+
+}
+
+.proj-page-backbtn div:hover {
+    border-top: 2px solid rgb(0, 174, 255);
+    border-left: 2px solid rgb(0, 174, 255);
 }
 
 .proj-page li {
     padding: 0 0 0 0 ;
-    border-bottom:solid rgb(0, 121, 151);
+    border-bottom:solid rgb(0, 174, 255);
     height:35px;
 }
 
 .proj-page li a {
-    color:black;
+    color:rgb(255, 255, 255);
     display:block;
     transition:.4s;
     height:30px;
@@ -193,8 +240,8 @@ header{
 }
 
 .proj-page li a:hover {
-    color:white;
-    background-color:rgb(30, 31, 68);
+    color:rgb(0, 0, 0);
+    background-color:rgb(0, 204, 255);
 }
 
 ::-webkit-scrollbar {
@@ -216,9 +263,9 @@ header{
 }
 
 footer {
-    background-color:rgb(30, 31, 68);
+    background-color:rgb(0, 0, 0);
     border-top: solid rgb(0, 174, 255);
-    margin-top: 30%;
+    position: relative;
 }
 
 .container {
@@ -232,9 +279,10 @@ footer {
 }
 
 .social-links a {
-    padding:10px;
+    padding:5px;
     background-color: rgb(0, 0, 0);
-    border-radius: 35%;
+    border-radius: 12px;
+    border: solid rgb(0, 174, 255);
 }
 
 .social-links a:hover {
@@ -295,9 +343,18 @@ footer {
         display:none;
     }
 
+    .content {
+        margin-bottom: 140px;
+    }
+
+    .mini-navpg{
+        display:block;
+    }
+
     .mini-nav {
         display:block;
     }
+
 
     .footerNav ul {
         flex-direction: column;
