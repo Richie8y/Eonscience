@@ -187,13 +187,9 @@ header{
     font-size:17px;
 }
 
-.content #section-II p {
-    margin:0 0 20px 20px;
-}
-
 .content img {
-     
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.281) ;
+    margin: 10px 0 10px 510px ;
+   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.281) ;
 
 }
 
@@ -373,6 +369,14 @@ footer {
 
     .mini-nav {
         display:block;
+    }
+
+    .content p {
+        margin-left: 1px;
+    }
+
+    .content img {
+        margin: 2px 0 2px 100px;
     }
 
 
