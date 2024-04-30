@@ -376,6 +376,14 @@ footer {
         display:block;
     }
 
+    .content p {
+        margin-left: 1px;
+    }
+
+    .content #section-II p {
+        margin-left: 1px;
+    }
+
 
     .footerNav ul {
         flex-direction: column;
