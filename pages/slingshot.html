@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/slingshotStyle.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title> Magnetic Slingshot</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Magnetic Slingshot</title>
+    <script src="https://kit.fontawesome.com/00deb268c6.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 </head>
 <body>
     <header>
-        <a class="logo" href="../index.html">EON SCIENCE</a>
+        <a id="logo" href="#">Eon Science</a>
 
         <nav>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li ><a href="#" id="proj-pagebtn" onclick="proj_display()">Projects</a></li>
-            </ul>
+            <a href="../index.html">Home</a>
+            <a href="../pages/about.html">About</a>
+            <a href="#" onclick="mini_proj_display()">Projects</a>
         </nav>
 
         <div class="mini-nav" id="mini-navbtn" onclick="show()">
@@ -27,23 +26,24 @@
             <span id="bar2" class="bar"></span>
             <span id="bar3" class="bar"></span>
         </div>
+        
     </header>
 
     <div class="mini-navpg" id="mini-navpg">
-        <ul class="mini-nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li ><a href="#" id="proj-pagebtn" onclick="mini_proj_display()">Projects</a></li>
-        </ul>
+        <a href="../index.html">Home</a>
+        <a href="../pages/about.html">About</a>
+        <a href="#" id="proj-pagebtn" onclick="mini_proj_display_2()">Projects</a>
     </div>
 
     <div class="proj-page" id="proj-page">
-        <div class="proj-page-backbtn" onclick="mini_proj_display()"><div></div></div>
-        <ul class="proj-links">
-            <li><a href="slingshot.html">The Magnetic Slingshot</a></li>
-            <li><a href="The_Ionic_Thruster.html">The Ion Thruster</a></li>
-        </ul>
-    </div>
+        <div class="proj-page-backbtn" onclick="mini_proj_display()">
+            <span id="bar1" class="bar"></span>
+            <span id="bar3" class="bar"></span>
+        </div>
+        <div class="pages" onclick="location.href='slingshot.html'" style="background-image: url(../images/thumbnail-1.png);"><p>The Magnetic Slingshot</p></div>
+        <div class="pages" onclick="location.href='The_Ion_Thruster.html'" style="background-image: url(../images/thumbnail-2.png);"><p>The Ion Thruster I</p></div>
+        <div class="pages" onclick="location.href='Ion_thruster_optimization.html'" style="background-image: url(../images/thumbnail-3.png);"><p>The Ion Thruster II</p></div>
+    </div> 
 
     <div class="content">
         <h2>The Slingshot</h2>  
@@ -57,7 +57,7 @@
           use of elastic materials.
         </p>
     
-          <img src="../images/Slingshot.png">
+          <img src="../images/Slingshot.png" style="margin-left: 35%;">
     
         <h3>Optimizing The Sling Shot</h3>
         <p>
@@ -97,29 +97,66 @@
             I don't a have to materials to recreate this, so theory that the pressurized air would cause any increase in velocity is very sceptical.
            
         </p>
-            <img src="../images/magnetic_slingshot.png">
+            <img src="../images/magnetic_slingshot.png" style="margin-left: 35%;">
         <p>
             Though my second design utilisies the pressurized air generated to move the projectile. A vent is included in the system to prevent a 
             vacuum from being created and opposing the movement of the magnet.
         </p>
-            <img src="../images/magnetic_slingshot2.png">
+            <img src="../images/magnetic_slingshot2.png" style="margin-left: 35%;">
+
+         <div class="spacer layer1"></div>
     </div>
 
     <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://www.instagram.com/rich.idoko/"><i class="fa-brands fa-instagram"></i></a>
+        
+
+        <div class=row>
+            <div class="col" style="padding-top: 9px;">
+                <a id="footer-logo" href="#">Eon Science</a>
+                <p id="about">kakfdofdfljajodakfndfn<br>
+                    aoajodfjhahfjdhfajd<br>
+                    kakdoaid.
+                </p>
             </div>
-            <div class="footerNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                </ul>
+
+            <div class="col">
+                <h3>Links</h3>
+                <div id="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                </div>
             </div>
+            <div class="col">
+                <h3>Contact</h3>
+                <p>Email: idokorich@gmail.com</p>
+                <p> Phone: +234 907 466 3003</p>
+
+                <p Style="margin-top:10px; text-decoration: underline; text-decoration-thickness: 3px;">Send a Comment</p>
+                <h2>Coming Soon</h2>
+                <!--<form>
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <input type="text" placeholder="Send a Comment">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>-->
+            </div>
+            <div class="col">
+                <h3>News Letter</h3>
+                <h2>Coming Soon</h2>
+               <!-- <form  action="fom/form.php" method="post">
+
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Input Email" name="email">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>-->
+                <div class="social-links">
+                    <a href="#" class="socials"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="socials"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="socials"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
         </div>
-        <div class="footerBottom">
-            <p>Copyright &copy;2023; Designed by <span class="designer">Rich Idoko</span></p>
-        </div>
+        <hr>
+        <p class="copyright">Eon Science &copy; 2023 - All Rights Reserved </p>
     </footer>
 
   <script src="../script/indexFunction.js"></script>

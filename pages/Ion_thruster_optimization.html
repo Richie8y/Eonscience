@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Ion Thruster Optimization</title>
+    <script src="https://kit.fontawesome.com/00deb268c6.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+<body>
+    <header>
+        <a id="logo" href="#">Eon Science</a>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../pages/about.html">About</a>
+            <a href="#" onclick="mini_proj_display()">Projects</a>
+        </nav>
+
+        <div class="mini-nav" id="mini-navbtn" onclick="show()">
+            <span id="bar1" class="bar"></span>
+            <span id="bar2" class="bar"></span>
+            <span id="bar3" class="bar"></span>
+        </div>
+        
+    </header>
+
+    <div class="mini-navpg" id="mini-navpg">
+        <a href="../index.html">Home</a>
+        <a href="../pages/about.html">About</a>
+        <a href="#" id="proj-pagebtn" onclick="mini_proj_display_2()">Projects</a>
+    </div>
+
+    <div class="proj-page" id="proj-page">
+        <div class="proj-page-backbtn" onclick="mini_proj_display()">
+            <span id="bar1" class="bar"></span>
+            <span id="bar3" class="bar"></span>
+        </div>
+        <div class="pages" onclick="location.href='slingshot.html'" style="background-image: url(../images/thumbnail-1.png);"><p>The Magnetic Slingshot</p></div>
+        <div class="pages" onclick="location.href='The_Ion_Thruster.html'" style="background-image: url(../images/thumbnail-2.png);"><p>The Ion Thruster I</p></div>
+        <div class="pages" onclick="location.href='Ion_thruster_optimization.html'" style="background-image: url(../images/thumbnail-3.png);"><p>The Ion Thruster II</p></div>
+    </div> 
+
+    <div class="content">
+        <h2>OPTIMIZATION OF THE ION THRUSTER</h2>
+
+        <p>
+            All thrusters work on the basic principles of Newton's third law of motion, which simply denotes that
+             when a force is applied in one direction then an equal force is also applied in the opposite direction.
+
+            Given the equation:
+
+            Force = Mass x Acceleration  
+
+            Thrust can be increased in an ion thruster by simply increasing the mass of ions or increasing 
+            its acceleration.
+        </p>
+
+ 
+
+        <h3>OPTIMIZATION BY MASS</h3>
+
+        <p>
+            Being honest I've failed to fully understand the benefits of using Xenon rather than other elements with 
+            a higher atomic mass but I am sure it's for a good reason.
+
+            Considering my lack of knowledge on the topic I can't dwell deeply into the topic when considering how to 
+            optimize the ion thruster.
+        </p>
+ 
+
+        <h3>OPTIMIZATION BY ACCELERATION</h3>
+
+        <p>
+            Whilst pondering on the enhancement of the accelerator in the ion thruster, I took into consideration two 
+            designs.
+        </p>
+        <div id="section-II">
+
+            <h4><b>1. THE MULTIPLE STAGE ACCELERATOR:</b></h4>
+            <p>
+                Taking inspiration from what some may know as a rail gun, the multiple stage accelerator utilizes additional
+                stages which theoretically should result in an increase in acceleration.
+            </p>
+
+            <img src="../images/multi-stage-accelerator.png" style="width:600px; height:200px; margin-bottom:15px; margin-left:100px; box-shadow: none;">
+            <img src="../images/stagnating-ion.png" style="width:200px; height:200px; margin-left:300px; margin-bottom:15px; box-shadow: none;">
+
+            <p>
+                The charge on the plates would also need to be alternated to avoid the stagnation of the ion in a
+                particular section.
+                The only downside to this design might be the power consumption in comparison to the thrust output. Basically 
+                I fear the design won't be efficient.
+            </p>
+    
+
+            <h4><b>2. THE CIRCULAR ACCELERATOR:</b></h4>
+
+            <p>
+                 I believe this design has a few advantages over the other design. One of them being that it's 
+                relatively smaller and would take less space, while still allowing the ion to travel a greater distance, 
+                so as to gain more acceleration.
+            </p>
+
+            <img src="../images/revolving-ion-accelerator.png" style="width:200px; height:200px; margin-left:100px; margin-bottom:15px; box-shadow: none;">
+
+            <p>
+                The design would prove rather difficult compared to the multiple stage accelerator. I imagine the  possible 
+                utilization of electromagnets in order to guide the ion through the accelerator. I still need more time to fully
+                comprehend how the design would work out, so this is just a rough sketch of what and how I imagine it should 
+                work.
+            </p>
+
+        </div>
+        
+
+        <p>
+            In conclusion, like all pieces of technology the ion thruster has a lot of possible designs and spaces for 
+            improvement, but we can't forget that thrust can also be produced in numerous other ways. I personally have
+             my eyes set on the utilization of fusion energy to create an engine for interstellar travel but for now ion 
+             thrust isn't such a bad idea.
+        </p>
+ 
+
+ 
+
+        <div class="spacer layer1"></div>
+    </div>
+
+    <footer>
+        
+
+        <div class=row>
+            <div class="col" style="padding-top: 9px;">
+                <a id="footer-logo" href="#">Eon Science</a>
+                <p id="about">kakfdofdfljajodakfndfn<br>
+                    aoajodfjhahfjdhfajd<br>
+                    kakdoaid.
+                </p>
+            </div>
+
+            <div class="col">
+                <h3>Links</h3>
+                <div id="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contact</h3>
+                <p>Email: idokorich@gmail.com</p>
+                <p> Phone: +234 907 466 3003</p>
+
+                <p Style="margin-top:10px; text-decoration: underline; text-decoration-thickness: 3px;">Send a Comment</p>
+                <h2>Coming Soon</h2>
+                <!--<form>
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <input type="text" placeholder="Send a Comment">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>-->
+            </div>
+            <div class="col">
+                <h3>News Letter</h3>
+                <h2>Coming Soon</h2>
+               <!-- <form  action="fom/form.php" method="post">
+
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Input Email" name="email">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>-->
+                <div class="social-links">
+                    <a href="#" class="socials"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="socials"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="socials"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+        </div>
+        <hr>
+        <p class="copyright">Eon Science &copy; 2023 - All Rights Reserved </p>
+    </footer>
+
+  <script src="../script/indexFunction.js"></script>
+</body>
+</html>
