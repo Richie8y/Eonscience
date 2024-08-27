@@ -276,6 +276,9 @@ nav a:hover::before {
 
 .banner {
     padding-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient( 45deg, rgb(0, 0, 0) , rgb(1, 66, 141) 50%);
     height: 300px;
 }
@@ -285,7 +288,6 @@ nav a:hover::before {
     font-size: 90px;
     font-weight: 900;
     font-family:'Bebas Neue', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10% 0 0 36%;
 }
 
 .content h1 {
@@ -293,36 +295,30 @@ nav a:hover::before {
     font-weight: 300;
     text-align: center;
     font-size: 40px;
-    border-bottom: solid rgb(0, 0, 0);
+    border-bottom: solid 5px rgb(0, 0, 0);
     width: 300px;
-    margin-left: 38%;
+    margin-left: 39%;
 }
  .projects {
     width: 80%;
     display: flex;
-    margin:50px 8% auto;
-    background-image: linear-gradient( 45deg, rgba(0, 153, 255, 0.616) , rgba(2, 80, 168, 0.651) 80%);
+    margin:8% 8% auto;
+    background-image: linear-gradient( 45deg, rgba(0, 153, 255, 0.74) , rgba(156, 240, 255, 0.651) 80%);
     padding: 20px;
-    border-radius: 20px;
+    border-left: solid 6px rgb(49, 57, 82);
     transition: 1s;
+    cursor: pointer;
 }
 
 .projects:hover {
-
-     .description p{
-        opacity: 1;
-     }
-
-     .description h2 {
-        font-size: 25px;
-        transform: translate(0,0);
-     }
+    border-left-color: rgb(4, 0, 255);
+    scale: 1.1;
 }
 
 
 .content .thumbnail {
-    width: 360px;
-    height: 180px;
+    width: 40%;
+    height: 20%;
     border-radius: 10px;
 }
 
@@ -333,15 +329,12 @@ nav a:hover::before {
 }
 
 .content .description h2 {
-    font-size: 40px;
-    transform: translate(0, 70px);
-    transition: 1s;
+    font-size: 25px;
 }
 
 .content .description p {
-    margin-top: 10px;
-    transition:1s;
-    opacity:0;
+    margin-top: 5px;
+    font-size: 20px;
 }
 
 footer {
@@ -521,9 +514,14 @@ hr{
         padding-left: 36%;
     }
 
-    .banner h1 {
-        font-size: 70px;
-        padding: 27% 0 0 26%;
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner h1{
+        font-size: 53px;
     }
 
     .content h1 {
@@ -549,16 +547,10 @@ hr{
     }
     
     .content .description h2 {
-        font-size: 26px;
-        transform: translate(0, 40px);
-        transition: 1s;
+        margin-top: 30px;
+        font-size: 24px;
     }
-    
-    .content .description p {
-        margin-top: 3px;
-        transition:1s;
-        opacity:0;
-    }
+
 
     .content .description p {
         display: none;
