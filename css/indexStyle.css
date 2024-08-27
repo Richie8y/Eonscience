@@ -525,6 +525,7 @@ hr{
     }
 
     .content h1 {
+        scale: 0.8;
         margin-left: 20%;
     }
 
@@ -535,8 +536,8 @@ hr{
     
     
     .content .thumbnail {
-        width: 200px;
-        height: 100px;
+        width: 40%;
+        height: 20%;
         border-radius: 10px;
     }
     
