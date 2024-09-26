@@ -181,7 +181,17 @@ nav a:hover::before {
 
 }
 
-.proj-page .pages:hover{
+.proj-page .last-pages {
+    margin: 40px 20px 80px 20px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: 120px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.proj-page .pages:hover, .last-pages:hover{
      p {
         margin-top:0;
         border-radius: 20px;

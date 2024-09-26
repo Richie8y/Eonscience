@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Touchless Interface Technology</title>
+    <script src="https://kit.fontawesome.com/00deb268c6.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+<body>
+    <header>
+        <a id="logo" href="#">Eon Science</a>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../pages/about.html">About</a>
+            <a href="#" onclick="mini_proj_display()">Projects</a>
+        </nav>
+
+        <div class="mini-nav" id="mini-navbtn" onclick="show()">
+            <span id="bar1" class="bar"></span>
+            <span id="bar2" class="bar"></span>
+            <span id="bar3" class="bar"></span>
+        </div>
+        
+    </header>
+
+    <div class="mini-navpg" id="mini-navpg">
+        <a href="../index.html">Home</a>
+        <a href="../pages/about.html">About</a>
+        <a href="#" id="proj-pagebtn" onclick="mini_proj_display_2()">Projects</a>
+    </div>
+
+    <div class="proj-page" id="proj-page">
+        <div class="proj-page-backbtn" onclick="mini_proj_display()">
+            <span id="bar1" class="bar"></span>
+            <span id="bar3" class="bar"></span>
+        </div>
+        <div class="pages" onclick="location.href='slingshot.html'" style="background-image: url(../images/thumbnail-1.png);"><p>The Magnetic Slingshot</p></div>
+        <div class="pages" onclick="location.href='The_Ion_Thruster.html'" style="background-image: url(../images/thumbnail-2.png);"><p>The Ion Thruster I</p></div>
+        <div class="pages" onclick="location.href='Ion_thruster_optimization.html'" style="background-image: url(../images/thumbnail-3.png);"><p>The Ion Thruster II</p></div>
+        <div class="last-pages" onclick="location.href='Touchless_Interface.html'" style="background-image: url(../images/thumbnail-4.png);"><p>The Touchless User Interface</p></div>
+    </div> 
+
+    <div class="content">
+        <h1>Touchless User Interface</h1>
+        <p>
+            Having dove into this project with some rather light research, I had discovered that currently the only means of achieving a touchless user 
+            interface have been by employing either a voice command system or a gesture controlled system. Don't get me wrong, these two solutions for
+            the problem are truly innovative and appreciated, but could we do better?
+        </p>
+        <p>
+            So now imagine a world where we could operate our devices without the need for direct physical contact, voice commands, 
+            or gestures. 
+            By exploring my imagination and technological knowledge, I devised a design involving Infrared Sensors to detect interferences 
+            and relay computational input to a device.
+        </p>
+
+        <h2 class="heading_2">The Infrared Sensor</h2>
+        <p>
+            The infrared sensor is an electronic module that can emit infrared light and detect the reflected light once an 
+            object obstructs the ray.
+            In itself, the infrared wave is a band in the electromagnetic radiation spectrum having a wavelength between 
+            780 nm and 1 mm, making it invisible to the human eye.
+        </p>
+        <p>
+            Infrared radiation is also termed thermal radiation, which can be produced by any hot object, and so many types of IR sensors omit the IR emitter and 
+            rely solely on the IR photodiode responsible for detecting changes in IR radiation in an environment (AKA changes in an 
+            environments temperature). <br>
+            An example is the passive infrared sensor( PIR ), which detects motion by changes in the infrared radiation in an environment.
+        </p>
+        <h4 class="heading_3"><b>HW201 IR Sensor Module</b></h4>
+        <p>
+            Using this module I would have a max range of 30cm, which could be adjusted with a potentiometer, which would vary the resistance at 
+            the non-inverted end of the comparator chip. However, for the final design, a fixed SMD resistor would be the best fit.
+        </p>
+        <p>
+            <b>The major components include:</b><br>
+            IR LED<br>
+            IR Photodiode<br>
+            LM393 Comparator
+        </p>
+        <p>
+            The module emits an IR light from the IR LED. Once the light is reflected, the IR photodiode senses it, and its resistance drops. 
+            The drop in resistance allows more voltage to flow through the non-inverted end of the Comparator chip, which compares it with the 
+            inverted end of the comparator chip. <br>
+            If the voltage at the non-inverted end is higher, then a HIGH output voltage passes through, 
+            but if it's lower then a LOW output voltage gets passed out. The drop in resistance of the photodiode relies on the intensity of 
+            the reflected IR light, which reduces the further away the interfering object is.
+        </p>
+        <p class="p_headings" ><b>Dimensions</b></p>
+        <p>
+            IR LED: 0.5cm<br>
+            IR Photodiode: 0.45cm<br>
+            Space Between IR LED and Photodiode: 0.2cm<br>
+            Width of module: 1.4cm<br>
+            Height of module: 4.1cm<br>
+        </p>
+ 
+        <h2 class="heading_2">The Touchless IR Interface</h2>
+        <p>
+            My design for this device consists of an organized grid of IR sensors to provide more detailed data on detected 
+            interferences and then interpret those interferences to control the intended device, like a computer mouse.
+        </p>
+            <p class="p_headings" ><b>Dimensions</b></p>
+            <img src="../images/28cm.png">
+        <p>
+            In the 28cm by 21cm interior of the frame, a maximum of 20 IR sensor modules can be fit side by side on the 
+            horizontal axis.<br>
+            The first sensor's IR LED would be separated from the wall of the frame by a distance of 0.2cm, and the last 
+            sensor's IR photodiode would have a distance of 0.2cm from the frame. <br>
+            As the modules are laid side by side, there would be a distance of 0.4cm between the photodiode of the first
+            module and the IR LED of the following module.
+            Along the vertical axis, 15 IR sensors would be able to fit in the same orientation as on the horizontal axis.
+            Data Analysis
+        </p>
+            <img src="../images/28cm (1).png"> <img src="../images/28cm (2).png">
+        <p>
+            Depending on the position and delay of an interference, various movements can be interpreted to control a device. 
+            On the horizontal axis, there would be a second column just behind the first. The idea behind this design is that
+            once an interference is detected in the second column, the position is determined from the initial grid, and the
+            act of breaching the second column would be registered as either a selection, single press, or double press, 
+            depending on the delay.
+        </p>
+        <p>
+            As a detectable object moves through the initial grid, its movement would be interpreted similarly to how a 
+            computer mouse moves.
+        </p>
+                
+        
+        <div class="spacer layer1"></div>
+    </div>
+
+    <footer>
+        
+
+        <div class=row>
+            <div class="col" style="padding-top: 9px;">
+                <a id="footer-logo" href="#">Eon Science</a>
+                <p id="about">
+                    A website dedicated to the<br>
+                    exploration of unexplored<br>
+                    scientific and technological advancements.
+                </p>
+            </div>
+
+            <div class="col">
+                <h3>Links</h3>
+                <div id="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contact</h3>
+                <p>Email: idokorich@gmail.com</p>
+                <p> Phone: +234 907 466 3003</p>
+
+                <p Style="margin-top:10px; text-decoration: underline; text-decoration-thickness: 3px;">Send a Comment</p>
+                <h2>Coming Soon</h2>
+                <!--<form>
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <input type="text" placeholder="Send a Comment">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>-->
+            </div>
+            <div class="col">
+                <h3>News Letter</h3>
+                <h2>Coming Soon</h2>
+               <!-- <form  action="fom/form.php" method="post">
+
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Input Email" name="email">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>-->
+                <div class="social-links">
+                    <a href="https://www.instagram.com/eonscience/" class="socials"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/IdokoRich" class="socials"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://pin.it/2aiOFQfle" class="socials"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+        </div>
+        <hr>
+        <p class="copyright">Eon Science &copy; 2023 - All Rights Reserved </p>
+    </footer>
+
+
+  <script src="../script/indexFunction.js"></script>
+</body>
+</html>
